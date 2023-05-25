@@ -27,7 +27,7 @@ LOGGER = logging.getLogger(__name__)
 
 def load_data(min_seq_length: int = 10) -> List[np.ndarray]:
     # load data
-    files = glob.glob(os.path.join(HOME_DIR, "data", "*.mid"))
+    files = glob.glob(os.path.join(HOME_DIR, "data", "melodic_expectation", "*.mid"))
     files.sort()
     sequences = []
     for fn in files:
